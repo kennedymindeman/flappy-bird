@@ -16,11 +16,9 @@ func _ready():
 	$AnimatedSprite2D.play("idle")
 
 func _physics_process(delta):
-	if Input.is_action_just_pressed("ui_up") and process_input:
+	if jump_pressed():
 		if not started:
-			$AnimatedSprite2D.play("fly")
-			game_started.emit()
-			started = true
+			start()
 
 		jump()
 
@@ -50,3 +48,11 @@ func done():
 func stop():
 	$AnimatedSprite2D.stop()
 	velocity = Vector2.ZERO
+
+func start():
+	$AnimatedSprite2D.play("fly")
+	game_started.emit()
+	started = true
+
+func jump_pressed():
+	return Input.is_action_just_pressed("ui_up")
