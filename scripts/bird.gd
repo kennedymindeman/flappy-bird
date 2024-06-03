@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-class_name Bird
+class_name bird
 
 signal game_started
 
