@@ -35,8 +35,8 @@ func jump():
 	rotation_degrees = -30
 
 func tilt():
-	if velocity.y > 0 and rotation_degrees < 90:
-		rotation_degrees = lerp(rotation_degrees, 190.0, 0.02)
+	if velocity.y > 0:
+		rotation_degrees = min(90, rotation_degrees + ROTATION_SPEED)
 
 func done():
 	process_input = false
