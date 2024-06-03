@@ -1,7 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://hn2m65qehjtd"]
+[gd_scene load_steps=3 format=3 uid="uid://hn2m65qehjtd"]
 
 [ext_resource type="PackedScene" uid="uid://coob87p6uepau" path="res://scenes/bird.tscn" id="1_yxyco"]
+[ext_resource type="Texture2D" uid="uid://b8hx3r3ww03db" path="res://art/Background/Background2.png" id="2_axvey"]
 
 [node name="main" type="Node2D"]
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(146, 166)
+scale = Vector2(3, 3)
+texture = ExtResource("2_axvey")
 
 [node name="bird" parent="." instance=ExtResource("1_yxyco")]
