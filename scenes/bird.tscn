@@ -55,13 +55,13 @@ animations = [{
 radius = 6.08276
 
 [node name="bird" type="CharacterBody2D"]
+position = Vector2(150, 275)
 scale = Vector2(3.5, 3.5)
 script = ExtResource("1_uh0ov")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ia553")
 animation = &"fly"
-frame_progress = 0.845738
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_fntwh")
