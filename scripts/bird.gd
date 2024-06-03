@@ -10,7 +10,7 @@ const GRAVITY = 850
 const ROTATION_SPEED = 3
 
 var started = false
-var process_input = false
+var process_input = true
 
 func _ready():
 	$AnimatedSprite2D.play("idle")
