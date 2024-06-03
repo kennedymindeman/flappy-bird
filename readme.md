@@ -1,0 +1,1 @@
+Art assets provided by MegaCrash at https://megacrash.itch.io/flappy-bird-assets
