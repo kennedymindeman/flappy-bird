@@ -1,26 +1,26 @@
 [gd_scene load_steps=10 format=3 uid="uid://coob87p6uepau"]
 
-[ext_resource type="Script" path="res://bird.gd" id="1_ox4e6"]
-[ext_resource type="Texture2D" uid="uid://dmh5iw8w8l362" path="res://art/Player/StyleBird1/Bird1-1.png" id="2_6ib1m"]
+[ext_resource type="Script" path="res://scripts/bird.gd" id="1_uh0ov"]
+[ext_resource type="Texture2D" uid="uid://dmh5iw8w8l362" path="res://art/Player/StyleBird1/Bird1-1.png" id="2_ft8c2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2m33d"]
-atlas = ExtResource("2_6ib1m")
+atlas = ExtResource("2_ft8c2")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yveiu"]
-atlas = ExtResource("2_6ib1m")
+atlas = ExtResource("2_ft8c2")
 region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jds0w"]
-atlas = ExtResource("2_6ib1m")
+atlas = ExtResource("2_ft8c2")
 region = Rect2(32, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kjvbg"]
-atlas = ExtResource("2_6ib1m")
+atlas = ExtResource("2_ft8c2")
 region = Rect2(48, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pwp71"]
-atlas = ExtResource("2_6ib1m")
+atlas = ExtResource("2_ft8c2")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ia553"]
@@ -56,7 +56,7 @@ radius = 6.08276
 
 [node name="Bird" type="CharacterBody2D"]
 scale = Vector2(3.5, 3.5)
-script = ExtResource("1_ox4e6")
+script = ExtResource("1_uh0ov")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ia553")
