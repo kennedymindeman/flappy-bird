@@ -21,7 +21,9 @@ func _physics_process(delta):
 			$AnimatableBody2D.play("fly")
 			game_started.emit()
 			started = true
+
 		jump()
+
 	if not started:
 		return
 
