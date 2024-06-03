@@ -18,7 +18,7 @@ func _ready():
 func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_up") and process_input:
 		if not started:
-			$AnimatableBody2D.play("fly")
+			$AnimatedSprite2D.play("fly")
 			game_started.emit()
 			started = true
 
