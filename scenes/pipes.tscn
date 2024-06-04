@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://cpou5tl6xw6eb"]
 
 [node name="pipes" type="Node2D"]
+
+[node name="top" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="top"]
+
+[node name="bottom" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bottom"]
