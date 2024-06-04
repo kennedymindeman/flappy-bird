@@ -1,11 +1,50 @@
-[gd_scene format=3 uid="uid://cpou5tl6xw6eb"]
+[gd_scene load_steps=6 format=3 uid="uid://cpou5tl6xw6eb"]
+
+[ext_resource type="Texture2D" uid="uid://dyg2m6r7t0c6r" path="res://art/Tiles/Style 1/PipeStyle1.png" id="1_iskkp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xtwtv"]
+atlas = ExtResource("1_iskkp")
+region = Rect2(0, 40, 32, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_74e5l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xtwtv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxpnk"]
+atlas = ExtResource("1_iskkp")
+region = Rect2(0, 0, 32, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8dppt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nxpnk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 0.0
+}]
 
 [node name="pipes" type="Node2D"]
+metadata/_edit_lock_ = true
 
 [node name="top" type="Area2D" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="top"]
+sprite_frames = SubResource("SpriteFrames_74e5l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="top"]
 
 [node name="bottom" type="Area2D" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="bottom"]
+sprite_frames = SubResource("SpriteFrames_8dppt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bottom"]
